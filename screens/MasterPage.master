@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="screens_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="stylesheet" type="text/css" href="../assets/StyleSheet.css"> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+       <div id="container">
+           <div id="menu">
+               <asp:ContentPlaceHolder ID="content_menu" runat="server"></asp:ContentPlaceHolder>
+           </div>
+           <div id="show">
+               <asp:ContentPlaceHolder ID="content_show" runat="server"></asp:ContentPlaceHolder>
+           </div>
+       </div>
+</body>
+</html>
